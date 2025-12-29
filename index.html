@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Makhan Shah | Family Restaurant</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#home" aria-label="Makhan Shah Home">
+        <img src="LOGO.png" alt="Makhan Shah logo" class="brand-logo" />
+        <div class="brand-text">
+          <div class="brand-name">Makhan Shah</div>
+          <div class="brand-tagline">Built on trust </div>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="#gallery">Gallery</a>
+        <a href="#menu">Menu</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn primary btn-cta" href="#order">Order Now</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav-mobile" id="navMobile">
+      <a href="#gallery">Gallery</a>
+      <a href="#menu">Menu</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a class="btn primary btn-mobile-cta" href="#order">Order Now</a>
+    </div>
+  </header>
+
+  <main id="home" class="hero hero-bg">
+  <!-- nav will float over this because header is sticky + z-index -->
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-inner hero-inner-bg">
+    <div class="hero-left">
+      <div class="chip chip-dark">Family Restaurant • Indian & Indo-Chinese</div>
+
+      <h1 class="hero-title-dark">
+        Welcome to <br>
+        <span class="accent-dark">Makhan Shah</span>
+      </h1>
+
+<p class="hero-text-dark" style="color: #ffffff;
+  text-shadow: 0 2px 12px rgba(255,191,47,.35);">
+  made fresh and served with love.
+</p>
+
+      <div class="hero-actions">
+        <a class="btn primary" href="#menu">View Menu</a>
+        <a class="btn primary" href="#Location">Location</a>
+        <a class="btn primary" href="https://share.google/o7HbC4R8QkG7CQ3QQ" target="_blank"
+   rel="noopener noreferrer">Reviews</a>
+      </div>
+
+      <div class="hero-inline">
+        <span class="hero-phone"> +91 93911 15288</span>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+  <!-- ORDER PARTNERS (Tikka Junction style) -->
+ 
+<div class="partners">
+  <a class="partner-card swiggy" href="https://www.swiggy.com/city/hyderabad/makhan-shah-family-restaurant-bowenpally-rest355780" target="_blank"
+   rel="noopener noreferrer">
+    <div class="partner-top">
+      <div class="partner-badge">Swiggy</div>
+      <div class="partner-title">Fast delivery</div>
+    </div>
+    <div class="partner-cta">Order Now →</div>
+  </a>
+
+  <a class="partner-card zomato" href="https://www.zomato.com/hyderabad/makhan-shah-city-grand-family-restaurant-bowenpally-secunderabad/order" target="_blank"
+   rel="noopener noreferrer">
+    <div class="partner-top">
+      <div class="partner-badge">Zomato</div>
+      <div class="partner-title">Easy checkout</div>
+    </div>
+    <div class="partner-cta">Order Now →</div>
+  </a>
+
+  <a class="partner-card whatsapp" href="#">
+    <div class="partner-top">
+      <div class="partner-badge">WhatsApp</div>
+      <div class="partner-title">Direct order</div>
+    </div>
+    <div class="partner-cta">Message Now →</div>
+  </a>
+</div>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Food Gallery</h2>
+        <p></p>
+      </div>
+
+      <div class="gallery">
+        <figure class="gcard"><img src="images/food1.jpg" alt="Food 1" onerror="this.closest('figure').classList.add('missing')"><figcaption>Chef Special</figcaption></figure>
+        <figure class="gcard"><img src="images/food2.jpg" alt="Food 2" onerror="this.closest('figure').classList.add('missing')"><figcaption>Biryani</figcaption></figure>
+        <figure class="gcard"><img src="images/food3.jpg" alt="Food 3" onerror="this.closest('figure').classList.add('missing')"><figcaption>Tandoori</figcaption></figure>
+        <figure class="gcard"><img src="images/food4.jpg" alt="Food 4" onerror="this.closest('figure').classList.add('missing')"><figcaption>Paneer</figcaption></figure>
+        <figure class="gcard"><img src="images/food5.jpg" alt="Food 5" onerror="this.closest('figure').classList.add('missing')"><figcaption>Noodles</figcaption></figure>
+        <figure class="gcard"><img src="images/food6.jpg" alt="Food 6" onerror="this.closest('figure').classList.add('missing')"><figcaption>Curries</figcaption></figure>
+      </div>
+
+      <div class="hint">
+       </b>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Menu</h2>
+        <p>Tap a section button to open its dropdown items.</p>
+      </div>
+
+      <div class="menu-controls">
+        <div class="searchbox">
+          <input id="searchInput" type="text" placeholder="Search menu (e.g., biryani, paneer, chicken)..." />
+          <button class="btn small" id="clearSearch">Clear</button>
+        </div>
+
+        <div class="filters">
+          <button class="pill active" data-filter="all">All</button>
+          <button class="pill" data-filter="veg">Veg</button>
+          <button class="pill" data-filter="nonveg">Non-Veg</button>
+        </div>
+      </div>
+
+      <div class="section-buttons" id="sectionButtons"></div>
+      <div class="dropdown-wrap" id="dropdownWrap"></div>
+
+      <div class="menu-note">
+        <span class="dot"></span>
+      Prices shown are as listed in your menu.
+      </div>
+    </div>
+  </section>
+
+  <!-- Services (like TJ: catering/dine-in etc.) -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Services</h2>
+        <p>Perfect for family meals, parties, and quick bites.</p>
+      </div>
+
+      <div class="services">
+          <div class="service-card" style="--bg: url('familfy.png');">
+    <div class="service-title">Dine-In</div>
+    <div class="service-text">Comfortable seating and warm service.</div>
+  </div>
+
+         <div class="service-card" style="--bg: url('images/takeaway.png');">
+    <div class="service-title">Takeaway</div>
+    <div class="service-text">Quick pickup, packed fresh.</div>
+  </div>
+
+  <div class="service-card" style="--bg: url('images/catering.png');">
+    <div class="service-title">Catering</div>
+    <div class="service-text">Events, parties, and family functions.</div>
+  </div>
+
+  <div class="service-card" style="--bg: url('images/familypack.png');">
+    <div class="service-title">Family Packs</div>
+    <div class="service-text">Great combos for groups.</div>
+  </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section  id = "Reviews" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>What People Say</h2>
+        
+      </div>
+
+      <div class="testimonials" id="testimonials">
+        <div class="tcard active">
+          <div class="tstars">★★★★★</div>
+          <div class="ttext">“Ambience is good ,taste of food is awesome which u dont get outside in any restaurant,since from 15 years i am along with this place”</div>
+          <div class="tauthor">— Chinnari Srikanth</div>
+        </div>
+        <div class="tcard">
+          <div class="tstars">★★★★★</div>
+          <div class="ttext">“I'm more than 17 years old customer to this restaurant and post my marriage my wife and kids are very much fond of this restaurant, particularly my kids are loving the foods... Interestly my younger son who is a big fan of this restaurant used the restaurant name for their school skit...”</div>
+          <div class="tauthor">— Ashutosh Mishra</div>
+        </div>
+        <div class="tcard">
+          <div class="tstars">★★★★★</div>
+          <div class="ttext">“Great Indo-Chinese starters — crispy, spicy, perfect.”</div>
+          <div class="tauthor">— Rakshith Singh </div>
+        </div>
+      </div>
+
+      <div class="tcontrols">
+        <button class="btn small" id="tPrev">Prev</button>
+        <button class="btn small" id="tNext">Next</button>
+      </div>
+    </div>
+  </section>
+
+  
+      <div class="reserve-card">
+        <h2>Contact & Location</h2>
+       
+
+        <div class="contact-list">
+          <div class="cl"><div class="cl-title">Address</div><div class="cl-text">Besides Subway, Bowenpally Market, Secunderabad, Telangana 500009, India</div></div>
+          <div class="cl"><div class="cl-title">Phone</div><div class="cl-text">+91 9391115288</div></div>
+          <div class="cl"><div class="cl-title">Hours</div><div class="cl-text">Mon–Sun: 11:00 AM – 11:00 PM</div></div>
+        </div>
+
+        <section id="Location" >
+        <!-- Replace with a real Google Maps embed iframe -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.8038862107555!2d78.4945493!3d17.4690982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9a66ffffffff%3A0x9bf1562eaebe1245!2sMakhan%20Shah%20family%20restaurant!5e0!3m2!1sen!2sca!4v1766986090775!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Makhan Shah Family Restaurant</div>
+      <div class="footer-right"><a href="#home">Back to top</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
